@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<title>IE6下外边距的问题</title>
+	<style type="text/css">
+		     body{
+		     	margin:0;
+		     }
+		     .case{
+		     	width:100px;
+		     	height:200px;
+		     	background:pink;
+		     	float:left;
+		     	margin-left:20px;  /*IE6下会产生双外边距的问题*/
+		     	/*display:inline;将元素降级为display:inline行内元素*/
+		     }
+	</style>
+</head>
+<body>
+         <div class="case"></div> 
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<title>IE6底板本下margin传止，外边距的传递问题</title>
+	<style type="text/css">
+		     body{
+		     	margin:0;
+		     }
+		     .parent{
+		     	width:400px;
+		     	background:red;
+		     	/*border:1px solid red;*/
+                /*overflow:hidden;*/
+                /*position:absolute;*/
+                /*position:fixed;*/
+                float:left;
+		     }
+		     .child{
+		     	background:yellow;
+		     	width:400px;
+		     	height:300px;
+		     	margin:40px;
+		     }
+	</style>
+</head>
+<body>
+       <div class="parent">
+       	       <div class="child"></div>
+       </div>
+</body>
+</html>

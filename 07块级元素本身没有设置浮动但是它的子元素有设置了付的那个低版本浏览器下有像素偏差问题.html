@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<title>块级元素本身没有设置浮动，但是子元素设置了浮动，产生间隙</title>
+	<style type="text/css">
+		     body{
+		     	margin:0;
+		     }
+		     ul{
+		     	margin:0;
+		     	padding:0;
+		     	width:402;
+		     }
+		     li{
+		     	width:100px;
+		     	border:1px solid red;
+		     	list-style:none;
+		     	/*float:left;/**/
+		     	vertical-align: top;
+		     }
+             a{
+		      	width:100px;
+		      	float:left; /*给一个行间元素加上了浮动，内嵌元素就支持宽高了的*/
+		      	height:30px;
+		      	background:blue;
+		      }
+		      span{
+		      	 width:100px;
+		      	 height:30px;
+		      	 float:right;
+		      	 background:blue;
+		      }
+	</style>
+</head>
+<body>
+        <ul>
+         	  <li>
+         	      <a href="">aa11</a>
+         	      <span>111</span>
+         	  </li>
+         	  <li>
+         	      <a href="">aa22</a>
+         	      <span>222</span>
+         	  </li>
+         	  <li>
+         	      <a href="">aa33</a>
+         	      <span>333</span>
+         	  </li>
+         	   <li>
+         	      <a href="">aa44</a>
+         	      <span>444</span>
+         	  </li>
+         </ul>
+</body>
+</html>

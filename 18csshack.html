@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		    .box{
+		    	width:100px;
+		    	height:100px;
+		    	background:red;
+		    	+background:yellow;
+		    	*background:pink;
+		    	_background:green;
+		    }
+		    @meta screen and(-webkit-min-device-pixel-ratio:0){
+		    	.box{background:pink;}
+		    }
+		    /*
+				css hack
+				IE10之前的IE浏览器解析
+				+,* IE7之前的IE浏览器解析
+				_IE6包括之前的IE浏览器
+		    */
+	</style>
+</head>
+<body>
+         <div class="box"></div>
+</body>
+</html>
